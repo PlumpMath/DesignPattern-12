@@ -1,15 +1,10 @@
 package com.subrata.adapter;
 
-public class MailSender implements EnhancedLogger{
-
-	   @Override
-	   public void sendToPrinter(String fileName) {
-	      //do nothing
-	   }
-
-	   @Override
-	   public void sendMailToAdmin(String token) {
-		  System.out.println("**********Subrata :: Sending mail to admin@hp.com with text ->"+token+"<-"); 
-	   }
+public class MailSender implements EnhancedLogger {
+	@Override
+	public void writeToDevice(String token) {
+		System.out
+				.println("**********Subrata :: Sending mail to admin@hp.com with text ->"
+						+ token + "<-");
 	}
-
+}

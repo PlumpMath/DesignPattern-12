@@ -1,7 +1,7 @@
 package com.subrata.adapter;
 
 public class TransactionWriter implements CustomLogger {
-	   MediaAdapter mediaAdapter; 
+	   EnhancedLoggerAdapter adapter; 
 
 	   @Override
 	   public void writeToLogFile(int type, String fileName) {		
@@ -13,8 +13,8 @@ public class TransactionWriter implements CustomLogger {
 	      //mediaAdapter is providing support to play other file formats
 	      else if(type == CustomLogger.LOG_TYPE_PRINTER 
 	         || type == CustomLogger.LOG_TYPE_MAIL){
-	         mediaAdapter = new MediaAdapter(type);
-	         mediaAdapter.writeToLogFile(type, fileName);
+	         adapter = new EnhancedLoggerAdapter(type);
+	         adapter.writeToLogFile(type, fileName);
 	      }
 	      else{
 	         System.out.println("**********Subrata :: Invalid type "+
