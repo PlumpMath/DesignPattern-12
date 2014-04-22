@@ -1,7 +1,8 @@
 package com.subrata.abstractfactory;
 /**
  * 
- * What it is : Its a creational pattern for creating factory of factory.
+ * What it is : Its a creational pattern for creating factory of related items but it is factory of factory. 
+ *  e.g first factory gives us related objects another gives us sub category objects of related objects.
  *
  * When to use : 
  *
