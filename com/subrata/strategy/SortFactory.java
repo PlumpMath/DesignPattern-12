@@ -9,6 +9,10 @@ public class SortFactory {
 	public static final int QUICKSORT_STRATEGY = 2;
 	private static SortFactory factory = new SortFactory();
 	
+	private SortFactory(){
+		
+	}
+	
 	public static SortFactory getInstance(){
 		return factory;
 	}
