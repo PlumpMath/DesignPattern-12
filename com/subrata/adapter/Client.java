@@ -9,6 +9,7 @@ package com.subrata.adapter;
  * 
  * Now Functionality 1 was achieved but later on they added addition functionality of sending mail and printing the doc. 
  *
+ *  
  * @author Subrata Saha (saha.subrata@gmail.com)
  *
  */
