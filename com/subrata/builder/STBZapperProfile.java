@@ -17,13 +17,13 @@ public class STBZapperProfile implements STBProfileBuilder {
 	}
 
 	@Override
-	public void printAllFeature() {
+	public void printStatus() {
 		System.out.println("**********Subrata :: STB Zapper has Tuning feature .");
 		System.out.println("**********Subrata :: STB Zapper has Reminder feature .");
 	}
 
 	@Override
-	public void addNetworkConnection() {
+	public void addConnection() {
 		System.out.println("**********Subrata :: Add Satellite Connectivity...");		
 	}
 
