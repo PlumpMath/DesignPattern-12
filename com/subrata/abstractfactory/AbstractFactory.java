@@ -11,6 +11,6 @@ public abstract class AbstractFactory {
 	public static final int TYPE_DB_MYSQL = 5;
 	public static final int TYPE_DB_ORACLE = 6;
 
-	abstract DBConnection getDataBaseConnection(int dbType);
-	abstract JMSConnection getJMSConnection(int jmsType); 
+	abstract IDBConnection getDataBaseConnection(int dbType);
+	abstract IJMSConnection getJMSConnection(int jmsType);  
 }

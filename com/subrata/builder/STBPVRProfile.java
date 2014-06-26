@@ -19,7 +19,7 @@ public class STBPVRProfile implements STBProfileBuilder {
 	}
 
 	@Override
-	public void printStatus() {
+	public void addPlugins() {
 		System.out.println("**********Subrata :: STB Zapper has Tuning feature .");
 		System.out.println("**********Subrata :: STB Zapper has Reminder feature .");
 		System.out.println("**********Subrata :: STB Zapper has Recording feature .");
@@ -28,7 +28,7 @@ public class STBPVRProfile implements STBProfileBuilder {
 	}
 
 	@Override
-	public void addConnection() {
+	public void addConfiguration() {
 		System.out.println("**********Subrata :: Add Satellite Connectivity...");
 		System.out.println("**********Subrata :: Add Internet Connectivity...");
 	}

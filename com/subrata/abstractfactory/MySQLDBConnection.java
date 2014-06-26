@@ -1,6 +1,6 @@
 package com.subrata.abstractfactory;
 
-public class MySQLDBConnection implements DBConnection {
+public class MySQLDBConnection implements IDBConnection {
 
 	@Override
 	public void createDBConnection() {

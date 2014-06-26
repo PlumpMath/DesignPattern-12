@@ -1,5 +1,5 @@
 package com.subrata.abstractfactory;
 
-public interface JMSConnection {
+public interface IJMSConnection {
 	void createJMSConnection();
 }

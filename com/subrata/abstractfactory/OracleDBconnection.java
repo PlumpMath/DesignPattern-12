@@ -1,6 +1,6 @@
 package com.subrata.abstractfactory;
 
-public class OracleDBconnection implements DBConnection {
+public class OracleDBconnection implements IDBConnection {
 
 	@Override
 	public void createDBConnection() {

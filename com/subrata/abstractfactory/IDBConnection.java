@@ -1,5 +1,5 @@
 package com.subrata.abstractfactory;
 
-public interface DBConnection {
+public interface IDBConnection {
 	void createDBConnection();
 }

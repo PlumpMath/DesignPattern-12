@@ -1,6 +1,6 @@
 package com.subrata.abstractfactory;
 
-public class JMSSocketConnection implements JMSConnection {
+public class JMSSocketConnection implements IJMSConnection {
 
 	@Override
 	public void createJMSConnection() {

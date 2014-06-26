@@ -3,8 +3,8 @@ package com.subrata.abstractfactory;
 public class JMSConnectionFactory extends AbstractFactory {
 
 	@Override
-	public JMSConnection getJMSConnection(int jmsType) {
-		JMSConnection conn = null;
+	public IJMSConnection getJMSConnection(int jmsType) {
+		IJMSConnection conn = null;
 		switch (jmsType) {
 		case AbstractFactory.TYPE_JMS_HTTP:
 			conn = new JMSHTTPConnection();
@@ -17,7 +17,7 @@ public class JMSConnectionFactory extends AbstractFactory {
 	}
 
 	@Override
-	DBConnection getDataBaseConnection(int dbType) {
+	IDBConnection getDataBaseConnection(int dbType) {
 		System.out
 				.println("**********Subrata :: JMSConnectionFactory.getDataBaseConnection( NOT SUPPORTED)");
 		return null;

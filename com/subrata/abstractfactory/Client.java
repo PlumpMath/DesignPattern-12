@@ -16,17 +16,17 @@ package com.subrata.abstractfactory;
 public class Client {
 	public static void main(String[] args) {
 		AbstractFactory dbConnFactory = ConnectionFactory.getInstance().getFactory(AbstractFactory.TYPE_DB); 
-		DBConnection mySqlConnection = dbConnFactory.getDataBaseConnection(AbstractFactory.TYPE_DB_MYSQL);
+		IDBConnection mySqlConnection = dbConnFactory.getDataBaseConnection(AbstractFactory.TYPE_DB_MYSQL);
 		mySqlConnection.createDBConnection();
 
-		DBConnection oracleConnection = dbConnFactory.getDataBaseConnection(AbstractFactory.TYPE_DB_ORACLE);
+		IDBConnection oracleConnection = dbConnFactory.getDataBaseConnection(AbstractFactory.TYPE_DB_ORACLE);
 		oracleConnection.createDBConnection();
 
 		AbstractFactory jmsConnFactory = ConnectionFactory.getInstance().getFactory(AbstractFactory.TYPE_JMS);
-		JMSConnection jmsHTTPconnection = jmsConnFactory.getJMSConnection(AbstractFactory.TYPE_JMS_HTTP);
+		IJMSConnection jmsHTTPconnection = jmsConnFactory.getJMSConnection(AbstractFactory.TYPE_JMS_HTTP);
 		jmsHTTPconnection.createJMSConnection();
 
-		JMSConnection jmsSocketConnection = jmsConnFactory.getJMSConnection(AbstractFactory.TYPE_JMS_SOCKET);
+		IJMSConnection jmsSocketConnection = jmsConnFactory.getJMSConnection(AbstractFactory.TYPE_JMS_SOCKET);
 		jmsSocketConnection.createJMSConnection();
 	}
 }

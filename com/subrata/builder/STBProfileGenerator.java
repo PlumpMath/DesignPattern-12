@@ -12,8 +12,8 @@ public class STBProfileGenerator {
 	 */
 	public void generateProfile() {
 		mb.buildBase();
-		mb.addConnection();
+		mb.addConfiguration();
 		mb.addFeatures();
-		mb.printStatus();
+		mb.addPlugins();
 	}
 };

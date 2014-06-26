@@ -2,7 +2,7 @@ package com.subrata.builder;
 
 public interface STBProfileBuilder {
    public void buildBase();
-   public void addConnection();
+   public void addConfiguration();
    public void addFeatures();
-   public void printStatus();
+   public void addPlugins();
 }  
